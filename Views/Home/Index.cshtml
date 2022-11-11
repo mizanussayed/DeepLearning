@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var data = ViewBag.data;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+   <Form method="post" asp-action="Index" asp-controller="Home" enctype="multipart/form-data">
+        <input type="file" name="file"> 
+        <input type="submit" value="Send">
+   </Form>
+</div>
+<script>
+    alert("@data");
+</script>
